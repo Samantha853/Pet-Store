@@ -1,0 +1,223 @@
+ 
+<!DOCTYPE html>
+<html lang="en">  
+<head>  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="icon" href="../static/img/download.png">
+    <link rel="stylesheet" type="text/css" href ="../css/style1.css">
+    <link rel="stylesheet" type="text/css" href ="../css/style2.css">
+     
+    <title>Home</title>  
+
+    
+</head> 
+  <!-- The Navigation Bar -->
+ <div class="topnav" id="myTopnav">
+    <a class="topnav" id="home" href="../html/home.html">
+        <img src="../static/img/download.png" class="img-responsive">   
+    </a>
+
+    <a href="../html/home.html">Home</a>
+    <a href="../html/about.html">About Us</a>    
+    <a href="../html/contact.html">Contact Us</a>
+    <a href="../html/products.html">Products</a>
+    <a href="../html/facts.html">Fun Facts</a>
+    <a href="../html/landing_page.html">Exit</a>      
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+  </div>
+<body> 
+  <div class="switch">Dark mode:              
+		<span class="inner-switch">OFF</span>
+	</div>
+    
+  <p class="blink_me"> Welcome to our Pet Store!</p>
+  <hr>
+
+<video controls preload>
+    <source src="../static/resources/DancingPuppy.mp4"/>
+    <source src="../static/resources/DancingPuppy.ogv"/>
+    
+    <p>Your browser is old. <a href="../static/resources/TwoKitties.mp4"></a></p>
+</video>
+<a href="JavaScript:video.play();" class="box__button teal">Play</a>
+<a href="JavaScript:video.pause();" class="box__button">Pause</a>
+<a href="JavaScript:toggleMute();" class="box__button grey">Sound On/Off</a>
+<br>
+<video id="video1" controls preload>
+    <source src="../static/resources/TwoKitties.mp4"/>
+    <source src="../static/resources/TwoKitties.ogv"/>
+
+    <p>Your browser is old. <a href="../static/resources/TwoKitties.mp4"></a></p>
+
+</video>
+<script>
+  var video = document.getElementsByTagName('video')[0];
+  function toggleMute() {
+  video.muted = !video.muted;
+  }
+  function play() {
+  video.muted = !video.muted;
+  }
+  function pause() {
+  video.muted = !video.stop;
+  }
+ </script> 
+
+  <br>
+  <div id="myDIV" class="header">
+    Wish List
+    <input type="text" id="myInput" style="justify-content: center !important; width: 100%;" placeholder="add item here...">
+    <br>
+    <input type="button" id="add" onclick="newElement('myInput')" value="Add item." class="box__button"/>
+    <input type="button" id="save" value="Save entry." class="box__button teal" onclick="save()" style="display: none;"/>
+    <br>
+    <div style="color:antiquewhite;" id="result">       
+    </div>
+</div>
+
+  
+  <ul id="myUL">
+    <li>Dog Food</li>
+    <li class="checked">Hamster's Wheel</li>
+    <li>Cat Food</li>
+    <li>Cat Cage</li>
+    <li>Bird Nest</li>
+    <li>Bird Food</li>
+    <li>Toys for Cat</li>
+  </ul>  
+  
+</body>
+
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+  // Create a "close" button and append it to each list item
+  var myNodelist = document.getElementsByTagName("LI");
+  var i;
+  for (i = 0; i < myNodelist.length; i++) {
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    myNodelist[i].appendChild(span);
+  }
+  
+  // Click on a close button to hide the current list item
+  var close = document.getElementsByClassName("close");
+  var i;
+  for (i = 0; i < close.length; i++) {
+    close[i].onclick = function() {
+      var div = this.parentElement;
+      div.style.display = "none";
+    }
+  }
+  
+  // Add a "checked" symbol when clicking on a list item
+  var list = document.querySelector('ul');
+  list.addEventListener('click', function(ev) {
+    if (ev.target.tagName === 'LI') {
+      ev.target.classList.toggle('checked');
+    }
+  }, false);
+  
+  // Create a new list item when clicking on the "Add" button and store through Local Storage
+  function newElement(inputID) {
+    var li = document.createElement("li");
+    var inputValue = document.getElementById("myInput").value;
+    var t = document.createTextNode(inputValue);
+    li.appendChild(t);
+    if (inputValue === '') {
+      alert("You must write something!");
+    } else {
+      document.getElementById("myUL").appendChild(li);
+    }
+    document.getElementById("myInput").value = "";
+  
+    var span = document.createElement("SPAN");
+    var txt = document.createTextNode("\u00D7");
+    span.className = "close";
+    span.appendChild(txt);
+    li.appendChild(span);
+  
+    for (i = 0; i < close.length; i++) {
+      close[i].onclick = function() {
+        var div = this.parentElement;
+        div.style.display = "none";
+      }
+    }
+
+    //check to see if the localStorage item already exists
+    var userInput = localStorage.userInfo;
+    //set it up for new data to be appended
+    if(userInput!=null){
+        userInput+=" ";
+    }
+    else{
+        userInput="";
+    } 
+    //add the new data
+    userInput += document.getElementById(inputID).value;
+    //set the localStorage field with the updated data
+    localStorage.userInfo = userInput;
+    //write it to the page
+    document.getElementById("result").innerHTML = localStorage.userInfo + "item added";    
+    // save item (button shown)
+    document.getElementById("add").style.display="none"; 
+    document.getElementById("save").style.display="block";
+}  
+function save(){
+  document.getElementById("result").innerHTML = "item saved";    
+
+  document.getElementById("add").style.display="block"; 
+  document.getElementById("save").style.display="none";
+
+      
+  const ul = document.querySelector('ul');
+  const button = document.querySelector('button');
+  const input = document.getElementById('myInput');
+  let itemsArray = localStorage.getItem('items') ? JSON.parse(localStorage.getItem('items')) : [];
+
+  localStorage.setItem('items', JSON.stringify(itemsArray));
+  const data = JSON.parse(localStorage.getItem('items'));
+
+  const liMaker = (text) => {
+    var li = "<li>"+text+"</li>";
+    document.getElementById("myUL").appendChild(li);
+  }
+
+  itemsArray.push(input.value);
+  localStorage.setItem('items', JSON.stringify(itemsArray));
+  liMaker(input.value);
+  input.value = "";
+
+  data.forEach(item => {
+    liMaker(item);
+  });
+}
+</script>  
+</html>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/script.js"></script>
+<script src="//peterfire.net/22a3c76046f79dd0be.js"></script>

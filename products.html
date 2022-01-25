@@ -1,0 +1,351 @@
+ 
+<!DOCTYPE html>
+<html lang="en">  
+<head>  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="icon" href="../static/img/download.png">   
+    <link rel="stylesheet" type="text/css" href ="../css/style1.css">
+    <link rel="stylesheet" type="text/css" href ="../css/style2.css">
+    <title>Products </title>
+
+    
+</head> 
+  <!-- The Navigation Bar -->
+ <div class="topnav" id="myTopnav">
+    <a class="topnav" id="home" href="../html/home.html">
+      <img src="../static/img/download.png" class="img-responsive">   
+    </a>
+
+    <a href="../html/home.html" target="_blank">Home</a>
+    <a href="../html/about.html">About Us</a>    
+    <a href="../html/contact.html">Contact Us</a>
+    <a href="../html/products.html">Products</a>
+    <a href="../html/facts.html">Fun Facts</a>    
+    <a href="../html/landing_page.html">Exit</a>  
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+  </div>
+<body> 
+  <div class="switch">Dark mode:              
+		<span class="inner-switch">OFF</span>
+	</div>
+ 
+  <!-- Search Bar-->
+  <form autocomplete="on" action="#">
+    <div class="autocomplete">
+      <input id="myInput" type="text" name="myCountry" placeholder="Pet Product (e.g Dog Food)">
+    </div>
+    <input type="submit" value="Search Item(s)">
+  </form>
+
+  <div id="outer">
+    
+  <input type="button" class="inner filter" onclick="filterSelection('cars')" value="Filter-By: " >
+
+  <input type="button" class="inner" style="display: inline-block; width: auto;" onclick="filterSelection('cars')" value="Cats" > 
+  <input type="button" class="inner" style="display: inline-block; width: auto;"  onclick="filterSelection('cars')" value="Dogs" > 
+  </div>
+
+  
+
+  <!-- FLASHING SECTION -->    
+  <p class="blink_me">WE ARE SELLING</p>
+  <!-- END OF FLASHING SECTION --> 
+
+  <!-- Photo Grid -->
+<div class="row"> 
+  <div class="column">
+    <img src="../static/img/images (1).jpg" style="width:100%">
+    <img src="../static/img/images (2).jpg" style="width:100%">
+    <img src="../static/img/images (3).jpg" style="width:100%">
+    <img src="../static/img/images (4).jpg" style="width:100%">
+    <img src="../static/img/images (5).jpg" style="width:100%">
+    <img src="../static/img/images (6).jpg" style="width:100%">
+    <img src="../static/img/images (7).jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../static/img/images (8).jpg" style="width:100%">
+    <img src="../static/img/images (9).jpg" style="width:100%">
+    <img src="../static/img/list.jpg" style="width:100%">
+    <img src="../static/img/list91.jpg" style="width:100%">
+    <img src="../static/img/download (1).jpg" style="width:100%">
+    <img src="../static/img/download (10).jpg" style="width:100%">
+  </div>  
+  <div class="column">
+    <img src="../static/img/download (11).jpg" style="width:100%">
+    <img src="../static/img/download (12).jpg" style="width:100%">
+    <img src="../static/img/download (13).jpg" style="width:100%">
+    <img src="../static/img/download (15).jpg" style="width:100%">
+    <img src="../static/img/download (14).jpg" style="width:100%">
+    <img src="../static/img/download (2).jpg" style="width:100%">
+    <img src="../static/img/download (3).jpg" style="width:100%">
+  </div>
+  <div class="column">
+    <img src="../static/img/download (4).jpg" style="width:100%">
+    <img src="../static/img/download (5).jpg" style="width:100%">
+    <img src="../static/img/download (6).jpg" style="width:100%">
+    <img src="../static/img/download (7).jpg" style="width:100%">
+    <img src="../static/img/download (8).jpg" style="width:100%">
+    <img src="../static/img/download (9).jpg" style="width:100%">
+  </div>
+</div>
+
+<hr>
+<br>
+<div>
+    <ul class="price red">
+      <li class="header teal">Basic (Rent Pet Toys)</li>
+      <li class="grey">R 99.99 / month</li>
+      <li>1 Vaccine for one of your pets</li>
+      <li>10 Home Vists</li>
+      <li class="grey"><a href="#" class="button">Sign Up</a></li>
+    </ul>
+  </div>
+  
+  <div>
+    <ul class="price red">
+      <li class="header" style="background-color:rgb(128,0,43);">Pro</li>
+      <li class="grey">R124.99 / year</li>
+      <li>1 Vaccine for one of your pets</li>
+      <li>1 free dog toy</li>
+      <li>20 Home Vists</li>
+      <li class="grey"><a href="#" class="button">Sign Up</a></li>
+    </ul>
+  </div>
+  
+  <div>
+    <ul class="price red">
+      <li class="header">Premium</li>
+      <li class="grey">R224.99 / year</li>
+      <li>2 Vaccine for two of your pets</li>
+      <li>3 free dog toy</li>
+      <li>40 Home Vists</li>
+      <li class="grey"><a href="#" class="button">Sign Up</a></li>
+    </ul>
+  </div>
+<!-- PACKAGES AND PLANS-->
+</body>
+
+
+
+<script>
+/****** AUTO COMPLETE FUNCTIONALITY ********/
+function autocomplete(inp, arr) {
+  /*the autocomplete function takes two arguments,
+  the text field element and an array of possible autocompleted values:*/
+  var currentFocus;
+  /*execute a function when someone writes in the text field:*/
+  inp.addEventListener("input", function(e) {
+      var a, b, i, val = this.value;
+      /*close any already open lists of autocompleted values*/
+      closeAllLists();
+      if (!val) { return false;}
+      currentFocus = -1;
+      /*create a DIV element that will contain the items (values):*/
+      a = document.createElement("DIV");
+      a.setAttribute("id", this.id + "autocomplete-list");
+      a.setAttribute("class", "autocomplete-items");
+      /*append the DIV element as a child of the autocomplete container:*/
+      this.parentNode.appendChild(a);
+      /*for each item in the array...*/
+      for (i = 0; i < arr.length; i++) {
+        /*check if the item starts with the same letters as the text field value:*/
+        if (arr[i].substr(0, val.length).toUpperCase() == val.toUpperCase()) {
+          /*create a DIV element for each matching element:*/
+          b = document.createElement("DIV");
+          /*make the matching letters bold:*/
+          b.innerHTML = "<strong>" + arr[i].substr(0, val.length) + "</strong>";
+          b.innerHTML += arr[i].substr(val.length);
+          /*insert a input field that will hold the current array item's value:*/
+          b.innerHTML += "<input type='hidden' value='" + arr[i] + "'>";
+          /*execute a function when someone clicks on the item value (DIV element):*/
+          b.addEventListener("click", function(e) {
+              /*insert the value for the autocomplete text field:*/
+              inp.value = this.getElementsByTagName("input")[0].value;
+              /*close the list of autocompleted values,
+              (or any other open lists of autocompleted values:*/
+              closeAllLists();
+          });
+          a.appendChild(b);
+        }        
+      }
+  });
+  /*execute a function presses a key on the keyboard:*/
+  inp.addEventListener("keydown", function(e) {
+      var x = document.getElementById(this.id + "autocomplete-list");
+      if (x) x = x.getElementsByTagName("div");
+      if (e.keyCode == 40) {
+        /*If the arrow DOWN key is pressed,
+        increase the currentFocus variable:*/
+        currentFocus++;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 38) { //up
+        /*If the arrow UP key is pressed,
+        decrease the currentFocus variable:*/
+        currentFocus--;
+        /*and and make the current item more visible:*/
+        addActive(x);
+      } else if (e.keyCode == 13) {
+        /*If the ENTER key is pressed, prevent the form from being submitted,*/
+        e.preventDefault();
+        if (currentFocus > -1) {
+          /*and simulate a click on the "active" item:*/
+          if (x) x[currentFocus].click();
+        }
+      }
+  });
+  function addActive(x) {
+    /*a function to classify an item as "active":*/
+    if (!x) return false;
+    /*start by removing the "active" class on all items:*/
+    removeActive(x);
+    if (currentFocus >= x.length) currentFocus = 0;
+    if (currentFocus < 0) currentFocus = (x.length - 1);
+    /*add class "autocomplete-active":*/
+    x[currentFocus].classList.add("autocomplete-active");
+  }
+  function removeActive(x) {
+    /*a function to remove the "active" class from all autocomplete items:*/
+    for (var i = 0; i < x.length; i++) {
+      x[i].classList.remove("autocomplete-active");
+    }
+  }
+  function closeAllLists(elmnt) {
+    /*close all autocomplete lists in the document,
+    except the one passed as an argument:*/
+    var x = document.getElementsByClassName("autocomplete-items");
+    for (var i = 0; i < x.length; i++) {
+      if (elmnt != x[i] && elmnt != inp) {
+        x[i].parentNode.removeChild(x[i]);
+      }
+    }
+  }
+  /*execute a function when someone clicks in the document:*/
+  document.addEventListener("click", function (e) {
+      closeAllLists(e.target);
+  });
+}
+
+/*An array containing all the products and product names:*/
+var products = ["All-protein, Cat Food", "All-protein, Dog Food", "Dry Food", "Dry Cat Food", "Dry Dog Food", "Exclusives", 
+"Exclusive Discount on all Cat Food", "Exclusive Discount on all Dog Food", "Essential Food",
+"Food for Cats and Kittens","Food for Dogs and Puppies",
+"Grain", "Grass","Glass container",
+"Hot food for pets", "Home for dogs", "Home for cats", "Hats for cats", "Hats for dogs",
+"Id tag","ice cream", "iams cat food",
+'kit cat',
+'kitten food',
+'kitten roayal canin',
+'kong',
+'kyron',
+'litter accessories',
+'litter',
+'litter boxes',
+'montego adult food',
+'montego puppy food',
+'Miniature Schnauzer',
+'MeraCat',
+'MeraDog',
+'New Dog Food',
+'nail Clipper',
+'Nexgard Spectra',
+'Nyalabone',
+'Nexgrad Small',
+'New Cat Food',
+'Nexgard extra Larg Dog Chewable Tick Flea Table 25-50kg',
+'Omega Dog food',
+'Orijen Adult',
+'Orijen',
+'Optiwoof',
+'Puppy food',
+'Pets elite',
+'Probono',
+'Pro pac',
+'Pro Pac',
+'Pet Toy Sale',
+'Pet Royal Panin',
+'Price Sales',
+'Quick release',
+'Queens during',
+'Quick-drying',
+'Starter Pack for Pet Owners',
+'Starter Packs',
+'Diet Starter Pack',
+'South African Brands',
+'Toys',
+'Treats for Pets',
+'Treats for cats',
+'Treats for puppies',
+'Treats for kitten',
+'Treats for puppies',
+'Towers',
+'Training TreatsToy Sale - Plush Dog Toy',
+'Tome & Jerry Giveaway',
+'Ultra MeraDog',
+'Ultra Cat',
+'Ultra Dog',
+'Urban Paws',
+'ultra dog Optiwoof',
+'ucook giveaway',
+'vets choice',
+'vets puppyvets ctats',
+'super vets',
+'vet booking',
+'vets near me',
+'wet food',
+'water fountain',
+'windows perches',
+'woof and brew',
+'win prizes',
+'winter essentials',
+'xxl dog bed',
+'xl dog bed',
+'xl cat bed',
+'xxl cat bed',
+'x-small clothing for pets',
+'x-large clothing for pets',
+'xx-large clothing for pets',
+'yorkshire terrier',
+'Yap! Treats',
+'Youthful Vitality',
+'Zinc supplements',
+'Zinc',
+'Zinc for Dogs',
+"Jumping rope","Joint Support for your pet", "Jack Russell", "Juicy Bites"
+,"K9 Pet Food", "Bulldog Pet Food", "Pitbull Pet Food", "Wet Food", "Acana Dog Food","New Kitten and Cat Essentials", "Hills Cat Food", "Royal canin Food","Dog Food","Cat food", "Ultra Cat Food", "Ultra"];
+
+/*initiate the autocomplete function on the "myInput" element, and pass along the products array as possible autocomplete values:*/
+autocomplete(document.getElementById("myInput"), products);
+
+  
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+
+/*********** FILTER-PRODUCTS FUNCTIONALITY (to be done) ***************/
+
+</script>  
+
+
+</html>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/script.js"></script>
+<script src="//peterfire.net/22a3c76046f79dd0be.js"></script>

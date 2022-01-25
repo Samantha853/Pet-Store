@@ -1,0 +1,827 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	justify-content: center;
+	align-content: center;
+}
+
+
+/********** DARK MODE *****/
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    display: flex;
+    flex-direction: column;
+    max-width: 50rem;
+    margin: 0 auto;
+	padding: 0 0.9375rem;   
+	overflow: hidden;
+	justify-content: center;
+}
+.columns {
+	float: left;
+	width: 33.3%;
+	padding: 8px;
+	display:inline-block;
+  }
+  
+  .price {
+	list-style-type: none;
+	border: 1px solid #eee;
+	margin: 0;
+	padding: 0;
+	-webkit-transition: 0.3s;
+	transition: 0.3s;
+  }
+  
+  .price:hover {
+	box-shadow: 0 8px 12px 0 rgba(0,0,0,0.2)
+  }
+  
+  .price .header {
+	background-color: #111;
+	color: white;
+	font-size: 25px;
+  }
+  
+  .price li {
+	border-bottom: 1px solid #eee;
+	padding: 20px;
+	text-align: center;
+  }
+  
+  .price .grey {
+	background-color: #eee;
+	font-size: 20px;
+  }
+  
+  .button {
+	background-color: #273044;
+	border: none;
+	color: white;
+	padding: 10px 25px;
+	text-align: center;
+	text-decoration: none;
+	font-size: 18px;
+  }
+
+  /** Products Design (CSS) **/
+  .row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Create four equal columns that sits next to each other */
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+    .column {
+        -ms-flex: 50%;
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column {
+        -ms-flex: 100%;
+        flex: 100%;
+        max-width: 100%;
+    }
+}
+  /** End of Products Design (CSS) ***/
+  
+  @media only screen and (max-width: 600px) {
+	.columns {
+	  width: 100%;
+	}
+  }
+.card {
+	box-shadow: 6px 6px 8px 6px rgba(0,0,0,0.2);
+	transition: 0.3s;
+	width: 100%;
+	height: 100%;
+	border-radius: 5px;
+	cursor: pointer;
+	align-self: center; 
+	align-content: center !important;
+	padding: 1em;
+	justify-content: center !important;
+}
+
+.card:hover {
+	box-shadow: 0 10px 18px 0 rgba(0,0,0,0.2);
+}
+small {
+    font-style: italic;
+}
+article {
+    display: flex;
+    flex-direction: column;
+}
+
+.switch {
+    align-self: flex-end;
+    margin: 0.9375rem;
+}
+.inner-switch {
+    display: inline-block;
+    cursor: pointer;
+    border: 1px solid #555;
+    border-radius: 1.25rem;
+    width: 3.125rem;
+    text-align: center;
+    font-size: 1rem;
+    padding: 0.1875rem;
+    margin-left: 0.3125rem;
+}
+.dark,
+.dark * {
+    background-color: #222;
+    color: #e6e6e6;
+    border-color: #e6e6e6;
+}
+/*************** END *****************/
+div{
+	justify-content: center !important;
+	align-content: center!important;
+  }
+.wave{
+	position: relative;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	z-index: -1;
+	background-color: transparent;
+		
+	-webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    -webkit-animation: myfirst 5s ; /* Chrome, Safari, Opera */
+    animation: myfirst 5s ;
+  }
+
+  /* Chrome, Safari, Opera */
+  @-webkit-keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+  }
+
+  /* Standard syntax */
+  @keyframes myfirst {
+    from {opacity: 0.2;}
+    to {opacity: 1;}
+  }
+
+.icon-responsive{
+	height:auto !important; 
+	width: auto !important; 
+	max-height: 60px !important; 
+	max-width: 200px !important;
+}
+
+.img-responsive{
+	height:auto !important; 
+	width: auto !important; 
+	max-height: 60px !important; 
+	max-width: 200px !important;
+}
+
+p{
+	justify-content: center;	
+	width: 100% !important;
+}
+
+.combo{
+	text-align: center;
+}
+
+.login-content{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.account-info{
+	display: flex;
+	justify-content: flex-start;
+	align-items: center;
+	text-align: center;
+}
+
+.img img{
+	width: 55% !important;
+}
+
+form{
+	width: 100% !important;
+}
+
+.login-content img{
+    height: 100px;
+}
+
+.login-content h2{
+	margin: 15px 0;
+	color: #333;
+	text-transform: uppercase;
+	font-size: 2.9rem;
+}
+
+.login-content .input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #d9d9d9;
+}
+
+.login-content .input-div.one{
+	margin-top: 0;
+}
+
+.i{
+	color: #d9d9d9;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i i{
+	transition: .3s;
+}
+
+.input-div > div{
+    position: relative;
+	height: 45px;
+}
+
+.blink_me {
+	animation: blinker 1.5s 3;
+	color: #273044;
+  }
+  
+@keyframes blinker {  
+50% { opacity: 0; }
+}
+
+/************ LABEL ************/
+label{
+	color: #273044 !important;
+	text-align: center;
+}
+
+input{
+	text-align: center!;
+	margin-right: 100px !important;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: inherit;
+	width: 100%;
+}
+
+.red {
+	color:#f22f46 !important;
+}
+
+
+a{
+	display: block;
+	text-align: right;
+	text-decoration: none;
+	color: #999;
+	font-size: 0.9rem;
+	transition: .3s;
+}
+
+a:hover{
+	color: #273044;
+}
+
+.btn{
+	display: block;
+	width: 100% !important;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #273044, #273044, #273044);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn1{
+	display: block;
+	width: 100% !important;
+	height: 50px;
+	border-radius:50%;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #273044, #273044, #273044);
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+.btn2{
+	display: block;
+	width: 100% !important;
+	height: 50px;
+	border-radius:50%;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, rgb(128,0,43), rgb(128,0,43), rgb(128,0,43));
+	background-size: 200%;
+	font-size: 1.2rem;
+	color: #fff;
+	font-family: 'Poppins', sans-serif;
+	text-transform: uppercase;
+	margin: 1rem 0;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.btn:hover{
+	background-position: right;
+}
+
+.btn1:hover{
+	background-position: right;
+}
+
+select{
+	display: block;
+	width: 100%;
+	height: 50px;
+	border-radius: 25px;
+	outline: none;
+	border: none;
+	background-image: linear-gradient(to right, #273044, #273044, #273044);
+	background-size: 200%;
+	background-color: #555;
+	color: white;
+	font-size: 1.2rem;
+	font-family: 'Poppins', sans-serif;
+	text-transform: none;
+	margin: 1rem 0 !important;
+	cursor: pointer !important;
+	transition: .5s !important;
+	float: "center" !important;
+	text-align: center !important;
+	align-content: center !important;
+	text-align-last:center !important;
+}
+
+select:hover{
+	background-position: right;
+}
+
+main {
+    flex-grow: 2;
+  }
+  
+  button {
+    font-size: 18px;
+    font-weight: 200;
+    padding: 0em;
+    /*width: 200px;*/
+    align-items: center;
+    background: transparent;
+    border: 4px solid #273044;
+    border-radius: 12px;
+    transition: all 0.4s ease 0s;
+    cursor: pointer;
+    color: #273044;
+	margin-bottom: 2em;
+	justify-content: right;	
+	align-content: center;
+  }
+  button:hover, button:active
+  button:focus {
+  }
+  #recordings {
+    list-style-type: none;
+    text-align: center;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  #recordings li {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1em;
+  }
+  #recordings audio {
+    border-radius: 4px;
+    margin: 0 auto 0.5em;
+  }
+  a {
+    color: #0d122b;
+  }
+  .error {
+    color: #f22f46;
+    text-align: center;
+  }
+  .success {
+    color: rgb(3, 90, 3);
+    text-align: center;
+}
+  footer {
+    border-top: 1px solid #273044;
+    text-align: center;
+  }
+video{
+	text-align: center;
+	justify-content: center;
+	width: 100%;
+}
+/************ FEEDBACK BUTTON DECO *************************/
+.box__button{
+	display: block;
+	position: relative;
+	background: rgb(128,0,43);
+	border: 1px solid transparent;
+	border-radius: 50px;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	text-decoration: none;
+	color: #fff;
+	line-height: 50px;
+	font-size: 18px;
+	padding: 0 70px;
+	white-space: nowrap;
+	margin-top: 25px;
+	transition: background 0.5s ease;
+	overflow: hidden;
+	-webkit-mask-image: -webkit-radial-gradient(white, black);
+}
+
+.navy{
+	background: #273044;
+}
+
+.grey{
+	background: grey;
+}
+.gray{
+	color: gray;
+}
+.teal{
+	background-color: rgb(2, 88, 88) !important;
+}
+.box__button:before {
+	content: '';
+	position: absolute;
+	width: 20px;
+	height: 100px;
+	background: #fff;
+	color: #fff;
+	bottom: -25px;
+	left: 0;
+	border: 2px solid #fff;
+	transform: translateX(-50px) rotate(45deg);
+	transition: transform 0.5s ease;
+	}
+.box__button:hover, .box__button:focus, .box__button:active {
+	background: #929215 !important;
+	border-color: #fff !important;
+}
+.box__button:hover:before, .box__button:focus::before, .box__button:active::before {
+	transform: translateX(250px) rotate(45deg) !important;
+}
+@keyframes upndown {
+  0% {
+	transform: translateY(5px);
+  }
+  50% {
+	transform: translateY(15px);
+  }
+  100% {
+	transform: translateY(5px);
+  }
+}
+@keyframes smallnbig {
+  0% {
+	width: 90px;
+  }
+  50% {
+	width: 100px;
+  }
+  100% {
+	width: 90px;
+  }
+}
+@keyframes shine {
+  0% {
+	opacity: 0.2;
+  }
+  25% {
+	opacity: 0.1;
+  }
+  50% {
+	opacity: 0.2;
+  }
+  100% {
+	opacity: 0.2;
+  }
+}
+/***********************************************************/
+
+
+
+
+
+@media screen and (max-width: 1050px){
+	.container{
+		grid-gap: 3rem;
+	}
+}
+
+@media screen and (max-width: 1000px){
+	form{
+		width: 290px;
+	}
+
+	.login-content h2{
+        font-size: 2.4rem;
+        margin: 8px 0;
+	}
+
+	.img img{
+		width: 400px;
+	}
+}
+
+@media screen and (max-width: 900px){
+	.container{
+		grid-template-columns: 1fr;
+	}
+
+	.img{
+		display: none;
+	}
+
+	.wave{
+		display: none;
+	}
+
+	.login-content{
+		justify-content: center;
+	}	
+}
+
+/* Remove margins and padding from the list */
+ul {
+	margin: 0;
+	padding: 0;
+  }
+  
+  /* Style the list items */
+  ul li {
+	cursor: pointer;
+	position: relative;
+	padding: 12px 8px 12px 40px;
+	list-style-type: none;
+	background: #eee;
+	font-size: 18px;
+	transition: 0.2s;
+	
+	/* make the list items unselectable */
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+  }
+  
+  /* Set all odd list items to a different color (zebra-stripes) */
+  ul li:nth-child(odd) {
+	background: #f9f9f9;
+  }
+  
+  /* Darker background-color on hover */
+  ul li:hover {
+	background: #ddd;
+  }
+  
+  /* When clicked on, add a background color and strike out text */
+  ul li.checked {
+	background: #888;
+	color: #fff;
+	text-decoration: line-through;
+  }
+  
+  /* Add a "checked" mark when clicked on */
+  ul li.checked::before {
+	content: '';
+	position: absolute;
+	border-color: #fff;
+	border-style: solid;
+	border-width: 0 2px 2px 0;
+	top: 10px;
+	left: 16px;
+	transform: rotate(45deg);
+	height: 15px;
+	width: 7px;
+  }
+  
+  /* Style the close button */
+  .close {
+	position: absolute;
+	right: 0;
+	top: 0;
+	padding: 12px 16px 12px 16px;
+  }
+  
+  .close:hover {
+	background-color: #273044;
+	color: white;
+  }
+  
+  /* Style the header */
+  .header {
+	background-color: #273044;
+	padding: 30px 40px;
+	color: white;
+	text-align: center;
+  }
+  
+  /* Clear floats after the header */
+  .header:after {
+	content: "";
+	display: table;
+	clear: both;
+  }
+  
+  
+  
+  /* Style the "Add" button */
+  .addBtn {
+	padding: 10px;
+	width: 25%;
+	background: #d9d9d9;
+	color: rgb(21, 9, 48);
+	float: left;
+	text-align: center;
+	font-size: 16px;
+	cursor: pointer;
+	transition: 0.3s;
+	border-radius: 0;
+  }
+  
+  .addBtn:hover {
+	background-color: #bbb;
+  }
+
+  /***UP AND DOWN Animation ***/
+.vertically {
+	text-align: center;
+    height: 600px;	
+    overflow: hidden;
+    position: relative;
+    justify-content: center;
+   }
+   .vertically .inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    /* Starting position */
+    -moz-transform:translateY(4    0%);
+    -webkit-transform:translateY(40%);	
+    transform:translateY(40%);
+    /* Apply animation to this element */	
+    -moz-animation: vertically 3s linear infinite alternate;
+    -webkit-animation: vertically 3s linear infinite alternate;
+    animation: vertically 3s linear infinite alternate;
+   }
+   /* Move it (define the animation) */
+   @-moz-keyframes vertically {
+    0%   { -moz-transform: translateY(70%); }
+    100% { -moz-transform: translateY(0%); }
+   }
+   @-webkit-keyframes vertically {
+    0%   { -webkit-transform: translateY(70%); }
+    100% { -webkit-transform: translateY(0%); }
+   }
+   @keyframes vertically {
+    0%   { 
+    -moz-transform: translateY(70%); /* Browser bug fix */
+    -webkit-transform: translateY(70%); /* Browser bug fix */
+    transform: translateY(70%); 		
+    }
+    100% { 
+    -moz-transform: translateY(0%); /* Browser bug fix */
+    -webkit-transform: translateY(0%); /* Browser bug fix */
+    transform: translateY(0%); 
+    }
+   }
+   /**** END OF UP AND DOWN Animation****************/
+
+
+
+/********** SEACRH BAR WITH AUTOCOMPLETE *******/
+.autocomplete {
+	position: relative;
+	display: inline-block;
+  }
+  
+  input {
+	border: 1px solid transparent;
+	background-color: #f1f1f1;
+	padding: 10px;
+	font-size: 16px;
+  }
+  
+  input[type=text] {
+	background-color: #f1f1f1;
+	width: 100%;
+  }
+  
+  input[type=submit] {
+	background-color: #273044;
+	color: #fff;
+	cursor: pointer;
+  }
+  .autocomplete{
+	  width: 100%;
+  }
+  
+  .autocomplete-items {
+	position: absolute;
+	border: 1px solid #d4d4d4;
+	border-bottom: none;
+	border-top: none;
+	z-index: 99;
+	/*position the autocomplete items to be the same width as the container:*/
+	top: 100%;
+	left: 0;
+	right: 0;
+  }
+  
+  .autocomplete-items div {
+	padding: 10px;
+	cursor: pointer;
+	background-color: #fff; 
+	border-bottom: 1px solid #d4d4d4; 
+  }
+  
+  /*when hovering an item:*/
+  .autocomplete-items div:hover {
+	background-color: #e9e9e9; 
+  }
+  
+  /*when navigating through the items using the arrow keys:*/
+  .autocomplete-active {
+	background-color: #273044 !important; 
+	color: #ffffff; 
+  }
+  #outer
+{
+    width:100%;
+    text-align: center;
+}
+.inner
+{
+    display: inline-block;
+	display: inline-block;
+	width: auto;
+}
+.inner.filter{
+	background-color: #273344 !important; 
+	color: azure; 
+	display: inline-block; 
+	width: auto;
+}

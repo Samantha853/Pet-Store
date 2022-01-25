@@ -1,0 +1,93 @@
+ 
+<!DOCTYPE html>
+<html lang="en">  
+<head>  
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   
+    <!-- CSS Links -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/a81368914c.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Poppins:wght@100;200;300;400;500;600;700&display=swap" rel="stylesheet">    
+    <link rel="icon" href="../static/img/download.png">   
+    <link rel="stylesheet" type="text/css" href ="../css/style1.css">
+    <link rel="stylesheet" type="text/css" href ="../css/style2.css">
+   
+    <title>Contact Us</title>      
+</head> 
+  <!-- The Navigation Bar -->
+ <div class="topnav" id="myTopnav">
+    <a class="topnav" id="home" href="../html/home.html">
+      <img src="../static/img/download.png" class="img-responsive">   
+    </a>
+
+    <a href="../html/home.html">Home</a>
+    <a href="../html/about.html">About Us</a>    
+    <a href="../html/contact.html">Contact Us</a>
+    <a href="../html/products.html">Products</a>
+    <a href="../html/facts.html">Fun Facts</a>    
+
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      <i class="fa fa-bars"></i>
+    </a>
+
+  </div>
+
+<body> 
+  <div class="switch">Dark mode:              
+		<span class="inner-switch">OFF</span>
+	</div>
+
+  <p class="{{ category }} blink_me"> Contact Us</p>
+  
+  <hr>
+  
+  <form action="" method="get" id="queryForm">
+    <br>
+    <label for="name"> Full Name: </label>
+    <input id="name" name="name" type="text" placeholder="Dwight K. Schrute" autofocus required>
+    <br>
+    <label for="address"> Address: </label>
+    <input id="address" name="address" type="text" placeholder="L 91 Bonkolo Rd, Khayelitsha, Cape Town, 7784" required>
+    <br>
+    <label for="phone"> Tel: </label>
+    <input id="phone" name="phone" type="tel" placeholder="0216506501" required>
+    <br>
+    <label for="email"> Email</label>
+    <input id="email" name="email" type="email" placeholder="dks@dundermifflin.com" required>
+    <br>
+    <button type="submit" id="submit" class="box__button" onclick="mySubmit()">Submit Form</button>
+  </form>
+
+  <div class="container" style="align-content: center;">
+  
+  </div>
+     
+  
+</body>
+
+
+
+<script>
+  function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+      x.className += " responsive";
+    } else {
+      x.className = "topnav";
+    }
+  }
+  function mySubmit(){
+    var fullName = document.getElementById("name").value;
+    alert("Submited.\n Thank you, "+fullName+"!");
+    console.log
+  }
+</script>  
+</html>
+
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+<script type="text/javascript" src="../static/js/script.js"></script>
+<script src="//peterfire.net/22a3c76046f79dd0be.js"></script>
